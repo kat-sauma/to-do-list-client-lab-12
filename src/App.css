@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.Header {
+  margin: 15px;
+}
+
+a {
+  padding: 25px;
+}
+
+label {
+  display: block;
+}
