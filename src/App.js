@@ -24,6 +24,10 @@ export default class App extends Component {
     putUserInLocalStorage(user);
 
   }
+
+  handleLogout = () => {
+
+  }
   render() {
     const { user } = this.state;
 
@@ -41,7 +45,8 @@ export default class App extends Component {
               exact
               token={user && user.token}
               render={(routerProps) =>
-                <ToDosListPage {...routerProps}
+                <ToDosListPage user={this.state.user}
+                  {...routerProps}
                 />}
             />
             <Route path='/login'
